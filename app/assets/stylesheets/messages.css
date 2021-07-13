@@ -47,16 +47,88 @@
   background-color: #FFFFFF;
   height: 100px;
   padding: 0px 40px;
-
+  display: flex;
+  justify-content: space-between;
+  
+}
+.chat-group-name {
+  color:#333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+.chat-delete {
+  margin-top: 40px;
+}
+.delete-button a{
+  color: darkred;
+  border: 1px solid darkred;
+  padding: 20px;
+  text-decoration: none;
 }
 .chat-main {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0px; 
-
+  overflow:scroll;
+}
+.messages {
+  margin: 10px 0 0 0;
+}
+.user-date {
+  display:flex;
+}
+.name {
+  font-size: 16px;
+  color:#434A54;
+}
+.date {
+  font-size: 12px;
+  color:#999;
+  padding-left: 10px;
+}
+.message-date {
+  margin-top: 10px;
+}
+.text {
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
 }
 .chat-form {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+.form-input {
+  background-color: white;
+  width:100%;
+  display: flex;
+}
+.input-text {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+.submit-button {
+  font-size: 16px;
+  color: white;
+  margin-left: 15px; 
+  background-color:#38AEF0;
+  border: none;
+  height: 50px;
+  padding: 0 20px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden {
+  display: none;
 }
