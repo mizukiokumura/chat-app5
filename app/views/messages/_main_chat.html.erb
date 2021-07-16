@@ -12,34 +12,7 @@
     </div>
   </div>
   <div class="chat-main">
-    <div class="messages">
-      <div class="user-date">
-        <div class="name">
-          Tom
-        </div>
-        <div class="date">
-          2020/3/31(Wed) 12:43:30
-        </div>
-      </div>
-      <div class="message-date">
-        <div class="text">
-          whats?
-        </div>
-      </div>
-      <div class="user-date">
-        <div class="name">
-          shiv
-        </div>
-        <div class="date">
-          2020/3/31(Wed) 12:47:30
-        </div>
-      </div>
-      <div class="message-date">
-        <div class="text">
-          whats?
-        </div>
-      </div>
-    </div>
+    <%= render partial: "message", collection: @messages %>
   </div>
   <%= form_with model: [@room, @message], class: "chat-form", local: true do |form| %>
     <div class="form-input">
